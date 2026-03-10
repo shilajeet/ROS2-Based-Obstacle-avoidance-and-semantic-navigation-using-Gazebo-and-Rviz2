@@ -1,0 +1,147 @@
+Panels:
+  - Class: rviz_common/Displays
+    Help Height: 78
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /Map1
+        - /LaserScan1
+        - /MarkerArray1
+        - /Marker1
+      Splitter Ratio: 0.5
+    Tree Height: 755
+  - Class: rviz_common/Selection
+    Name: Selection
+  - Class: rviz_common/Views
+    Expand: true
+    Name: Views
+    Splitter Ratio: 0.5
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz_default_plugins/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Name: Grid
+      Plane: XY
+      Value: true
+    - Alpha: 0.7
+      Class: rviz_default_plugins/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: true
+      Name: Map
+      Topic:
+        Value: /map
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Class: rviz_default_plugins/LaserScan
+      Color: 255; 0; 0
+      Color Transformer: Intensity
+      Enabled: true
+      Name: LaserScan
+      Point Step: 1
+      Size (m): 0.03
+      Style: Points
+      Topic:
+        Value: /scan
+      Value: true
+    - Class: rviz_default_plugins/MarkerArray
+      Enabled: true
+      Name: Semantic Waypoints
+      Namespaces:
+        semantic_waypoints: true
+        semantic_labels: true
+      Topic:
+        Value: /semantic_waypoints
+      Value: true
+    - Class: rviz_default_plugins/Marker
+      Enabled: true
+      Name: Obstacle Arrow
+      Topic:
+        Value: /obstacle_monitor/closest_marker
+      Value: true
+    - Alpha: 0.3
+      Class: rviz_default_plugins/Map
+      Color Scheme: costmap
+      Enabled: true
+      Name: Global Costmap
+      Topic:
+        Value: /global_costmap/costmap
+      Value: true
+    - Alpha: 0.5
+      Class: rviz_default_plugins/Map
+      Color Scheme: costmap
+      Enabled: true
+      Name: Local Costmap
+      Topic:
+        Value: /local_costmap/costmap
+      Value: true
+    - Alpha: 1
+      Buffer Length: 1
+      Class: rviz_default_plugins/Path
+      Color: 0; 255; 0
+      Enabled: true
+      Name: Global Plan
+      Topic:
+        Value: /plan
+      Value: true
+    - Class: rviz_default_plugins/RobotModel
+      Enabled: true
+      Name: RobotModel
+      Robot Description: robot_description
+      Value: true
+    - Angle Tolerance: 0.1
+      Class: rviz_default_plugins/Odometry
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+        Position:
+          Alpha: 0.5
+          Color: 204; 51; 204
+        Value: true
+      Enabled: true
+      Keep: 1
+      Name: Odometry
+      Topic:
+        Value: /odom
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: map
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/GoalTool
+      Topic:
+        Value: /goal_pose
+    - Class: rviz_default_plugins/PublishPoint
+  Value: true
+  Views:
+    Current:
+      Class: rviz_default_plugins/TopDownOrtho
+      Enable Stereo Rendering: false
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.009999999776482582
+      Scale: 120
+      Target Frame: <Fixed Frame>
+      X: 0
+      Y: 0
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 1016
+  Width: 1600
+  X: 0
+  Y: 0
